@@ -1,0 +1,118 @@
+.header__caption {
+    margin-top: 15rem;
+    text-align: center;
+
+    @include respond(tab-land) {
+        margin-top: 0;
+        position: relative;
+        top: 15rem;
+    }
+
+
+    &-header {
+        color: $color-white;
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: 'Poppins' !important;
+        font-weight: 700;
+        overflow: hidden;
+
+
+
+        @include respond(tab-port) {
+            font-size: 5.5vw;
+        }
+
+
+        & .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+    }
+
+
+    &-text {
+        font-size: 13rem;
+        font-family: 'Sacramento' !important;
+        position: relative;
+        text-align: center;
+        color: #ff0000;
+
+        @include respond(tab-port) {
+            font-size: 16vw;
+        }
+
+
+        & .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+
+
+        & img {
+            width: 7rem;
+            height: 7rem;
+            margin-top: -3.5rem;
+            position: absolute;
+            left: 35%;
+            transform: translateX(50%);
+        }
+    }
+
+    &-form {
+        margin-top: 3rem;
+
+        &--input {
+            width: 35rem;
+            padding: 1.8rem 2rem;
+            outline: none;
+            border: none;
+            font-size: 1.3rem;
+            border-radius: 5rem;
+            font-family: 'Poppins' !important;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include respond(tab-port) {
+                width: 100%;
+                transform: scale(.9);
+            }
+        }
+
+        & .button {
+            color: $color-white;
+            background-color: $color-primary;
+            width: 5.5rem;
+            height: 5.5rem;
+            font-size: 2rem;
+            line-height: 5.5rem;
+            border-radius: 5rem;
+            border: none;
+            outline: none !important;
+            cursor: pointer;
+            margin-left: .5rem;
+
+            @include respond(tab-land) {
+                display: none;
+            }
+        }
+
+        .button-search {
+            padding: 1.2rem 6rem;
+            border-radius: 2.8rem;
+            background-image: linear-gradient(to left, $color-primary, #b42727);
+            border: none;
+            color: $color-white;
+            font-family: 'Poppins';
+            font-size: 1.3rem;
+            display: none;
+            margin: 2rem auto;
+            outline: none;
+
+            @include respond(tab-land) {
+                display: block;
+             }
+        }
+    }
+}

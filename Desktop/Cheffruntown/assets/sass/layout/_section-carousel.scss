@@ -1,0 +1,160 @@
+.section-carousel {
+    position: relative;
+    overflow: hidden;
+    
+    @include respond(tab-land) {
+        display: none;
+    } 
+
+    &-header {
+        font-weight: 700;
+        font-family: 'Poppins';
+        margin-left: 1.5rem;
+    }
+
+    & .flickity-viewport {
+        height: 16rem !important;
+    }
+
+    .flickity-slider {
+
+        & .is-selected {
+            position: relative !important;
+        }
+    }
+
+
+    & .flickity-prev-next-button {
+        display: none;
+      }
+
+    & .carousel {
+        width: 120%;
+        padding: 1rem;
+
+
+        @include respond(tab-land) {
+            width: 100%;
+        }
+
+        & .main-carousel {
+            width: 100%;
+        }
+
+        
+
+        & .main-carousel {
+
+            & .carousel-cell {
+                float: left;
+                left: 0;
+                display: flex;
+                width: 100%;
+
+                @include respond(tab-land) {
+                    display: block;
+                    position: relative;
+                }
+            }
+
+            & .carousel-cell-item {
+                background-color: #fff;
+                height: 11rem;
+                border-radius: 1rem;
+                box-shadow: 0 1rem 2rem #e9e8e8;
+                width: 33.5%;
+                display: flex;
+                border: 2px solid transparent;
+                transition: all .5s;
+                cursor: pointer;
+                margin-top: 2rem;
+                margin-right: 3rem;
+
+                @include respond(tab-land) {
+                    width: 33.3% !important;
+                }
+
+                &:first-child {
+                    margin-left: .5rem;
+
+                    @include respond(tab-land) {
+                        margin-left: .3rem;
+                        margin-right: 1rem;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 2rem;
+                }
+
+                &:hover {
+                    transform: translateY(-1rem);
+                    border: 2px solid $color-primary;
+                }
+
+                &:active {
+                    transform: translateY(0);
+                    border: 2px solid $color-primary;
+                }
+
+                &:hover .desserts-img {
+                    transform: scale(1.1);
+                }
+
+                &:hover .fa-arrow-right {
+                    color: $color-primary;
+                }
+
+                &:hover .desserts-img-2 {
+                    transform: scale(1);
+                }
+                
+
+                & .desserts-img {
+                    width: 10rem;
+                    height: 10.5rem;
+                    transform: scale(.85);
+                    transition: all .3s;
+
+                    &-2 {
+                        transform: scale(.7);
+                        margin-top: 0.5rem;
+                    }
+                }
+
+                & .des {
+                    margin-top: 2.3rem;
+                    margin-left: 1rem;
+                    position: relative;
+
+                    &-name {
+                        color: $color-black;
+                        font-family: 'Poppins';
+                        font-size: 1.5rem;
+                        width: 100%;
+                        font-weight: 600;
+
+                        @include respond(tab-land) {
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                    &-price {
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        font-style: italic;
+                        margin-top: .5rem;
+                        color: $color-primary;
+                    }
+
+                    & .fa-arrow-right {
+                        position: absolute;
+                        bottom: 3rem;
+                        float: right;
+                        right: -1rem;
+                    }
+                }
+            }
+        }
+    }
+}

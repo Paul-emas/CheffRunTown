@@ -1,0 +1,113 @@
+.section-app {
+    padding: 15rem 0 0 0;
+    background-image: linear-gradient(to left bottom, #000, #4b4a4a);
+    overflow: hidden;
+    font-family: 'Poppins';
+
+
+    & .app {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url('../img/piz.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 25rem;
+            height: 25rem;
+            left: 50%;
+            transform: scale(1.2) translate(-50%, -20rem);
+        }
+    }
+
+    & .col-lg-6 {
+        position: relative;
+
+        &:first-child {
+
+            @include respond(tab-land) {
+                margin-top: -4rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        & .buttons {
+            margin-top: 5rem;
+
+            @include respond(tab-land)  {
+                margin-top: 2rem;
+            }
+
+            & .col-lg-6 {
+
+                @include respond(tab-land) {
+                    max-width: 50%;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    &--img {
+        width: auto;
+        float: right;
+        right: 0;
+        position: relative;
+
+        @include respond(tab-land) {
+            float: none;
+            transform: translateX(-50%) scale(.9);
+            left: 50%;
+        }
+    }
+
+    &--text {
+        color: #d2d2d2;
+        font-size: 1.3rem;
+        line-height: 2;
+    }
+
+    &--header {
+        margin-top: 10rem;
+        color: $color-primary;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    &--caption {
+        color: $color-white;
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+
+    &--links {
+        background-color: $color-white;
+        padding: 1.5rem 3rem;
+        font-size: 1.4rem;
+        border-radius: 5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: none;
+        outline: none !important;
+        width: 80% !important;
+        cursor: pointer;
+
+        @include respond(tab-land) {
+            width: 100% !important;
+            padding: 1.2rem 2rem;
+        }
+        
+
+        & i {
+            font-size: 1.6rem;
+            margin-right: 0.2rem;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+}

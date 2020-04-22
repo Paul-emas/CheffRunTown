@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefRunTown | The best online chef site for you </title>
+    <link rel="stylesheet" href="assets/sass/main.css">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="assets/sass/vendors/bootstrap.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+
+<body>
+
+    <!-- Start -->
+    <header class="header">
+
+        <div class="header__nav--link">
+            <button class="link--buttons">Sign up</button>
+            <button class="link--buttons">Login</button>
+        </div>
+
+        <div class="container">
+            <nav class="header__nav">
+                <div class="header__nav--logo">
+                    <h1>ChefRunTown <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
+                            viewBox="0 0 226 226" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                <g>
+                                    <path
+                                        d="M178.71656,55.29938c-6.90867,-2.60305 -14.44504,-3.04637 -21.61125,-1.27125c-5.89605,-21.46562 -25.41124,-36.34327 -47.67187,-36.34327c-22.26064,0 -41.77583,14.87766 -47.67188,36.34327c-7.18072,-1.77345 -14.73128,-1.3177 -21.64656,1.30656c-17.60711,6.43891 -28.10288,24.53479 -24.94918,43.01516c3.15371,18.48037 19.05687,32.07122 37.80293,32.30641l-6.35625,69.98938c-0.17899,1.98055 0.48529,3.94479 1.82966,5.41015c1.34437,1.46536 3.24423,2.29605 5.23284,2.28798h111.62281c1.98861,0.00807 3.88847,-0.82261 5.23284,-2.28798c1.34437,-1.46536 2.00866,-3.4296 1.82966,-5.41015l-6.39156,-69.98937c18.76388,-0.2396 34.67365,-13.85907 37.80365,-32.3616c3.13,-18.50253 -7.41482,-36.59722 -25.05584,-42.99528z"
+                                        fill="#e74c3c"></path>
+                                    <path
+                                        d="M49.11969,173.03125l-2.50719,27.61437c-0.17899,1.98055 0.48529,3.94479 1.82966,5.41015c1.34437,1.46536 3.24423,2.29605 5.23284,2.28798h111.62281c1.98861,0.00807 3.88847,-0.82261 5.23284,-2.28798c1.34437,-1.46536 2.00866,-3.4296 1.82966,-5.41015l-2.5425,-27.61437z"
+                                        fill="#f9e3ae"></path>
+                                    <path d="M179.31688,128.29031c-6.78365,2.46388 -14.11698,3.00166 -21.1875,1.55375"
+                                        fill="#e74c3c"></path>
+                                    <path
+                                        d="M109.46875,17.65625c-5.25667,0.00152 -10.47891,0.84805 -15.46688,2.50719c-1.85045,0.59044 -3.37604,1.91693 -4.21786,3.66739c-0.84182,1.75046 -0.92556,3.77036 -0.23151,5.58449l0.17656,0.45906c1.99183,4.92386 7.32201,7.6116 12.46531,6.28563c2.38297,-0.56792 4.82467,-0.85239 7.27437,-0.8475c10.28535,0.0099 19.92999,4.99669 25.88406,13.38344c2.03748,2.7414 5.27175,4.33224 8.68687,4.27281h2.08344c2.5345,0.02281 4.88687,-1.31429 6.16399,-3.50362c1.27711,-2.18934 1.2831,-4.89515 0.0157,-7.09013c-8.83472,-15.30218 -25.16462,-24.72587 -42.83406,-24.71875zM25.67219,88.28125c3.47644,-0.01238 6.62467,-2.05597 8.05125,-5.22625c4.60409,-10.1353 16.26641,-14.97917 26.69625,-11.08812c-0.38844,-8.40438 3.14281,-8.40438 1.4125,-17.97406c-18.03627,-4.19577 -36.52651,4.92372 -44.17594,21.78781c-1.22702,2.72624 -0.99701,5.88735 0.61174,8.40725c1.60875,2.5199 4.37944,4.059 7.36889,4.09337z"
+                                        fill="#e3f2ff"></path>
+                                    <path
+                                        d="M63.5625,183.625c-1.95026,0 -3.53125,1.58099 -3.53125,3.53125v7.0625c0,1.95026 1.58099,3.53125 3.53125,3.53125c1.95026,0 3.53125,-1.58099 3.53125,-3.53125v-7.0625c0,-1.95026 -1.58099,-3.53125 -3.53125,-3.53125zM120.0625,183.625c-1.95026,0 -3.53125,1.58099 -3.53125,3.53125v7.0625c0,1.95026 1.58099,3.53125 3.53125,3.53125c1.95026,0 3.53125,-1.58099 3.53125,-3.53125v-7.0625c0,-1.95026 -1.58099,-3.53125 -3.53125,-3.53125zM137.71875,183.625c-1.95026,0 -3.53125,1.58099 -3.53125,3.53125v7.0625c0,1.95026 1.58099,3.53125 3.53125,3.53125c1.95026,0 3.53125,-1.58099 3.53125,-3.53125v-7.0625c0,-1.95026 -1.58099,-3.53125 -3.53125,-3.53125zM155.375,183.625c-1.95026,0 -3.53125,1.58099 -3.53125,3.53125v7.0625c0,1.95026 1.58099,3.53125 3.53125,3.53125c1.95026,0 3.53125,-1.58099 3.53125,-3.53125v-7.0625c0,-1.95026 -1.58099,-3.53125 -3.53125,-3.53125zM81.21875,183.625c-1.95026,0 -3.53125,1.58099 -3.53125,3.53125v7.0625c0,1.95026 1.58099,3.53125 3.53125,3.53125c1.95026,0 3.53125,-1.58099 3.53125,-3.53125v-7.0625c0,-1.95026 -1.58099,-3.53125 -3.53125,-3.53125zM98.875,183.625c-1.95026,0 -3.53125,1.58099 -3.53125,3.53125v7.0625c0,1.95026 1.58099,3.53125 3.53125,3.53125c1.95026,0 3.53125,-1.58099 3.53125,-3.53125v-7.0625c0,-1.95026 -1.58099,-3.53125 -3.53125,-3.53125zM137.71875,173.03125c0,1.95026 1.58099,3.53125 3.53125,3.53125h14.125c1.95026,0 3.53125,-1.58099 3.53125,-3.53125c0,-1.95026 -1.58099,-3.53125 -3.53125,-3.53125h-14.125c-1.95026,0 -3.53125,1.58099 -3.53125,3.53125z"
+                                        fill="#ffffff"></path>
+                                    <path
+                                        d="M208.34375,92.55406c0.05903,-18.11341 -11.23653,-34.32255 -28.25,-40.53875v0c-6.50994,-2.44487 -13.5447,-3.15078 -20.41063,-2.04812c-7.2495,-21.12018 -26.96537,-35.42575 -49.29253,-35.76595c-22.32715,-0.34021 -42.46973,13.35801 -50.35935,34.24752c-0.09285,0.13489 -0.17547,0.27653 -0.24719,0.42375c0,0.35312 -0.21187,0.74156 -0.35313,1.09469c-6.88018,-1.10761 -13.93058,-0.38918 -20.44594,2.08344c-17.72721,6.41598 -29.08388,23.77186 -27.86512,42.58498c1.21876,18.81312 14.71983,34.55865 33.12668,38.63377h0.24719h0.52969l1.90687,0.2825l2.04812,0.2825h0.21187l-6.10906,66.49344c-0.26849,2.97083 0.72794,5.91718 2.7445,8.11522c2.01655,2.19804 4.86634,3.44407 7.84925,3.43196h111.62281c2.98291,0.01211 5.8327,-1.23392 7.84925,-3.43196c2.01655,-2.19804 3.01299,-5.1444 2.7445,-8.11522l-6.07375,-66.14031h0.17656c1.24771,-0.11771 2.49542,-0.29427 3.74313,-0.52969v0c2.27133,-0.42781 4.50356,-1.04197 6.67406,-1.83625h0.24719c16.4357,-6.13707 27.42596,-21.7253 27.685,-39.2675zM177.1275,125.28875c-0.89458,0.30604 -1.81271,0.565 -2.75438,0.77688l-1.20063,0.31781c-1.39918,0.28492 -2.81424,0.48538 -4.2375,0.60031h-0.98875c-3.0251,0.1947 -6.06268,0.00486 -9.04,-0.565c-1.95026,-0.39005 -3.84745,0.87474 -4.2375,2.825c-0.39005,1.95026 0.87474,3.84745 2.825,4.2375c1.74919,0.34552 3.51826,0.5814 5.29688,0.70625l6.07375,67.09375c0.0895,0.99028 -0.24265,1.97239 -0.91483,2.70507c-0.67218,0.73268 -1.62211,1.14802 -2.61642,1.14399h-111.69344c-0.9943,0.00404 -1.94423,-0.41131 -2.61642,-1.14399c-0.67218,-0.73268 -1.00433,-1.7148 -0.91483,-2.70507l2.22469,-24.71875h74.79188c1.95026,0 3.53125,-1.58099 3.53125,-3.53125c0,-1.95026 -1.58099,-3.53125 -3.53125,-3.53125h-74.15625l3.21344,-35.3125c3.87268,-0.28588 7.68723,-1.10583 11.33531,-2.43656c1.83324,-0.67284 2.77393,-2.70442 2.10109,-4.53766c-0.67284,-1.83324 -2.70442,-2.77393 -4.53766,-2.10109c-4.38705,1.58066 -9.04373,2.27676 -13.70125,2.04812h-1.16531c-16.46839,-1.51503 -29.67939,-14.25656 -31.78905,-30.65938c-2.10966,-16.40282 7.4472,-32.07265 22.99624,-37.70562c3.67647,-1.46426 7.59021,-2.24222 11.54719,-2.29531c1.52468,0.01448 3.04662,0.13246 4.55531,0.35313c-0.67163,3.37241 -1.01459,6.802 -1.02406,10.24062c0,1.27125 0,2.53073 0,3.77844c0.13003,1.85311 1.67359,3.28862 3.53125,3.28406h0.24719c0.93741,-0.06331 1.81094,-0.49758 2.42728,-1.20671c0.61634,-0.70913 0.92468,-1.63464 0.85678,-2.57173c0,-1.08292 0,-2.1776 0,-3.28406c-0.00507,-4.01767 0.51731,-8.01862 1.55375,-11.90031c0,0 0,0 0,-0.24719c5.52243,-19.86451 23.61105,-33.61041 44.22891,-33.61041c20.61786,0 38.70648,13.7459 44.22891,33.61041c0.50084,1.82808 2.35558,2.93469 4.20219,2.50719c6.48724,-1.61623 13.31363,-1.20961 19.56312,1.16531v0c14.11891,5.04236 23.5148,18.45038 23.43535,33.44247c-0.07945,14.99209 -9.61691,28.29977 -23.78847,33.19221z"
+                                        fill="#ffffff"></path>
+                                    <path
+                                        d="M113.88281,32.06375c-1.95026,-0.24378 -3.72887,1.13959 -3.97266,3.08984c-0.24378,1.95026 1.13959,3.72887 3.08984,3.97266c4.57769,0.58483 8.94241,2.28222 12.7125,4.94375c1.58594,0.95626 3.6412,0.52488 4.70881,-0.98834c1.06761,-1.51322 0.78483,-3.59414 -0.64787,-4.7676c-4.7058,-3.35202 -10.16219,-5.49821 -15.89062,-6.25031z"
+                                        fill="#ffffff"></path>
+                                    <path
+                                        d="M97.10938,63.5625l4.37875,7.98063l7.98063,4.37875l-7.98063,4.37875l-4.37875,7.98063l-4.37875,-7.98063l-7.98063,-4.37875l7.98063,-4.37875zM139.20188,95.34375l3.00156,5.50875l5.54406,3.03688l-5.54406,3.00156l-3.00156,5.54406l-3.03687,-5.54406l-5.50875,-3.00156l5.50875,-3.03688zM111.76406,120.0625l2.04812,3.74313l3.77844,2.08344l-3.77844,2.04812l-2.04812,3.77844l-2.04812,-3.77844l-3.77844,-2.04812l3.77844,-2.08344z"
+                                        fill="#ffffff"></path>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <div class="header__icon--box">
+                            <i class="fal fa-lock-alt"></i>
+                            <div class="toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </h1>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fal fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fal fa-hat-chef"></i> Chefs</a></li>
+                    <li><a href="#"><i class="fal fa-burger-soda"></i> Dishes</a></li>
+                    <li><a href="#"><i class="fal fa-money-bill-wave"></i> ChefRunTown Pay4me</a></li>
+                    <li><a href="#"><i class="fal fa-users"></i> Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Greetings -->
+        <div class="header__caption">
+            <h2 class="header__caption-header ml6">
+                <span class="text-wrapper">
+                    <span class="letters">Welcome to</span>
+                </span>
+            </h2>
+            <h3 class="header__caption-text ml2">
+                <span class="text-wrapper">
+                    <span class="letters">ChefRunTown</span>
+                </span>
+            </h3>
+
+            <!-- Search form -->
+            <form action="#" method="get" class="header__caption-form">
+                <input type="text" placeholder="Search for meal" class="header__caption-form--input" required />
+                <button class="fal fa-search button" type="submit"></button>
+                <button class="button-search" type="submit"><i class="fal fa-search"></i> Search</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Dropdowns -->
+    <div class="modal-box">
+        <div class="modal-box-sign">
+            <div class="row">
+                <div class="col-lg-6 modal-box-bg">
+                    <h1 class="modal-box-sign--header">Sign up now</h1>
+                    <p class="modal-box-sign--caption">Fill in the form to proceed <i class="fal fa-arrow-right"></i>
+                    </p>
+                    <p class="modal-box-sign--caption modal-box-sign--caption-2">Explore dishes coming from the best!
+                    </p>
+                </div>
+                <div class="col-lg-6 modal-box-content">
+                    <i class="fa fa-times close"></i>
+                    <div class="tab-box">
+                        <button class="tab-btn active" onclick="openTab(event, 'tab-0')" id="defaultOpen"> User</button>
+                        <button class="tab-btn" onclick="openTab(event, 'tab-1')">Chef</button>
+                    </div>
+                    <form action="#" method="post" class="form tabcontent" id="tab-0">
+                        <div class="form-box">
+                            <label for="name">FullName:</label><br>
+                            <input type="text" placeholder="Fullname" name="Fullname" id="name" class="form-input" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="email">Email Address:</label><br>
+                            <input type="email" placeholder="Email" name="email" id="email" class="form-input" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="pass1">Password:</label><br>
+                            <input type="password" placeholder="Password" name="Password" id="pass1" class="form-input" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="pass2">Retype Password:</label><br>
+                            <input type="password" placeholder="Repeat password" name="Password" id="pass2" class="form-input" required>
+                        </div>
+                        <button type="submit" class="form-btn">Sign up</button>
+                    </form>
+
+                    <form action="#" method="post" class="form tabcontent" id="tab-1">
+                        <div class="form-box">
+                            <label for="email2">Email Address:</label><br>
+                            <input type="email" placeholder="Email" name="email2" id="email" class="form-input" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="pass3">Password:</label><br>
+                            <input type="password" placeholder="Password" name="Password" id="pass3" class="form-input" required>
+                        </div>
+                        <button type="submit" class="form-btn form-btn-2">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+        <!-- <div class="modal-box-sign">
+            <div class="row">
+                <div class="col-lg-6 modal-box-bg modal-box-bg-2">
+                    <h1 class="modal-box-sign--header">Login</h1>
+                    <p class="modal-box-sign--caption">Fill in the form to proceed <i class="fal fa-arrow-right"></i>
+                    </p>
+                    <p class="modal-box-sign--caption modal-box-sign--caption-2">Explore dishes coming from the best!
+                    </p>
+                </div>
+                <div class="col-lg-6 modal-box-content">
+                    <i class="fa fa-times close"></i>
+                    <div class="tab-box tab-box-2">
+                        <button class="tab-btn tab-btn-2 active" onclick="openTab(event, 'tab-0')" id="defaultOpen"> User</button>
+                        <button class="tab-btn tab-btn-2" onclick="openTab(event, 'tab-1')">Chef</button>
+                    </div>
+                    <form action="#" method="post" class="form tabcontent" id="tab-0">
+                        <div class="form-box">
+                            <label for="name">FullName:</label><br>
+                            <input type="text" placeholder="Fullname" name="Fullname" id="name" class="form-input form-input-2" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="email">Email Address:</label><br>
+                            <input type="email" placeholder="Email" name="email" id="email" class="form-input form-input-2" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="pass1">Password:</label><br>
+                            <input type="password" placeholder="Password" name="Password" id="pass1" class="form-input form-input-2" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="pass2">Retype Password:</label><br>
+                            <input type="password" placeholder="Repeat password" name="Password" id="pass2" class="form-input form-input-2" required>
+                        </div>
+                        <button type="submit" class="form-btn form-btn-lo">Sign up</button>
+                    </form>
+
+                    <form action="#" method="post" class="form tabcontent" id="tab-1">
+                        <div class="form-box">
+                            <label for="email2">Email Address:</label><br>
+                            <input type="email" placeholder="Email" name="email2" id="email" class="form-input form-input-2" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="pass3">Password:</label><br>
+                            <input type="password" placeholder="Password" name="Password" id="pass3" class="form-input form-input-2" required>
+                        </div>
+                        <button type="submit" class="form-btn form-btn-lo form-btn-2">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+    <!-- Main contents -->
+
+    <main class="start">
+
+        <!-- Carousel 1  -->
+        <section class="section-carousel section-padding-small">
+            <div class="container">
+                <h2 class="section-carousel-header">Hot Dessert</h2>
+
+                <div class="carousel">
+                    <div class="main-carousel"
+                        data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 4000, "pageDots": true}'>
+                        <div class="carousel-cell">
+                            <div class="carousel-cell-item">
+                                <figure>
+                                    <img src="assets/img/des-1.png" alt="desserts" class="desserts-img" />
+                                </figure>
+                                <div class="des">
+                                    <a href="#" class="des-name">Bahibe <br> <span>Choloate ganache</span></a>
+                                    <p class="des-price">$5</p>
+                                    <i class="fad fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="carousel-cell-item">
+                                <figure>
+                                    <img src="assets/img/des-2.png" alt="desserts"
+                                        class="desserts-img desserts-img-2" />
+                                </figure>
+                                <div class="des">
+                                    <a href="#" class="des-name">Bahibe <br> <span>Choloate ganache</span></a>
+                                    <p class="des-price">$5</p>
+                                    <i class="fad fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="carousel-cell-item">
+                                <figure>
+                                    <img src="assets/img/des-3.png" alt="desserts" class="desserts-img" />
+                                </figure>
+                                <div class="des">
+                                    <a href="#" class="des-name">Bahibe <br> <span>Choloate ganache</span></a>
+                                    <p class="des-price">$5</p>
+                                    <i class="fad fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="carousel-cell-item">
+                                <figure>
+                                    <img src="assets/img/des-4.png" alt="desserts"
+                                        class="desserts-img desserts-img-2" />
+                                </figure>
+                                <div class="des">
+                                    <a href="#" class="des-name">Bahibe <br> <span>Choloate ganache</span></a>
+                                    <p class="des-price">$5</p>
+                                    <i class="fad fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-cell">
+                            <div class="carousel-cell-item">
+                                <figure>
+                                    <img src="assets/img/des-1.png" alt="desserts" class="desserts-img" />
+                                </figure>
+                                <div class="des">
+                                    <a href="#" class="des-name">Bahibe <br> <span>Choloate ganache</span></a>
+                                    <p class="des-price">$5</p>
+                                    <i class="fad fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="carousel-cell-item">
+                                <figure>
+                                    <img src="assets/img/des-2.png" alt="desserts"
+                                        class="desserts-img desserts-img-2" />
+                                </figure>
+                                <div class="des">
+                                    <a href="#" class="des-name">Bahibe <br> <span>Choloate ganache</span></a>
+                                    <p class="des-price">$5</p>
+                                    <i class="fad fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="carousel-cell-item">
+                                <figure>
+                                    <img src="assets/img/des-3.png" alt="desserts" class="desserts-img" />
+                                </figure>
+                                <div class="des">
+                                    <a href="#" class="des-name">Bahibe <br> <span>Choloate ganache</span></a>
+                                    <p class="des-price">$5</p>
+                                    <i class="fad fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="carousel-cell-item">
+                                <figure>
+                                    <img src="assets/img/des-4.png" alt="desserts"
+                                        class="desserts-img desserts-img-2" />
+                                </figure>
+                                <div class="des">
+                                    <a href="#" class="des-name">Bahibe <br> <span>Choloate ganache</span></a>
+                                    <p class="des-price">$5</p>
+                                    <i class="fad fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section dishes -->
+        <section class="section-dish section-padding">
+            <div class="container">
+                <div class="section-heading">
+                    <h1 class="section-header">Explore Our Menu</h1>
+                    <p class="section-caption">Fresh & Local</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="assets/img/dish-1.png" alt="food-img" />
+                        </figure>
+                        <a href="#" class="section-dish--links">Launch<i class="fad fa-arrow-right"></i></a>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="assets/img/dish-1.png" alt="food-img" />
+                        </figure>
+                        <a href="#" class="section-dish--links">Dinner<i class="fad fa-arrow-right"></i></a>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="assets/img/dish-1.png" alt="food-img" />
+                        </figure>
+                        <a href="#" class="section-dish--links">Catering<i class="fad fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section Chef -->
+        <section class="section-chef section-padding">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img src="assets/img/chef-1.png" alt="chef-bg" class="section-chef--img">
+                </div>
+                <div class="col-lg-5">
+                    <h1 class="section-chef__header">Chefs from <span>around</span> the world</h1>
+                    <p class="section-chef__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                        facere similique odit repellat eveniet, explicabo numquam praesentium minus perspiciatis, unde
+                        inventore quaerat eos vero dolore pariatur possimus alias tempore architecto.</p>
+                    <p class="section-chef__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                        facere similique odit repellat eveniet, explicabo numquam praesentium minus perspiciatis, unde
+                        inventore quaerat eos vero dolore pariatur possimus alias tempore architecto.</p>
+                    <p class="section-chef__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                        facere similique odit repellat eveniet, explicabo numquam praesentium minus perspiciatis, unde
+                        inventore quaerat eos vero dolore pariatur possimus alias tempore architecto.</p>
+                    <a href="#" class="btn">View chefs <i class="fad fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section User -->
+        <section class="section-specials section-padding">
+            <div class="container">
+                <div class="section-heading">
+                    <h1 class="section-header">Special Dishes</h1>
+                    <p class="section-caption">Fresh & Local</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="section-specials--content">
+                            <figure>
+                                <img src="assets/img/specials-1.jpg" alt="food-img" class="food-bg" />
+                                <div class="chef-details">
+                                    <img src="assets/img/chef-1.jpg" alt="chef-profile" class="chef-bg" />
+                                    <p class="chef-name">Chef Janey Jeffy <br> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                </div>
+                            </figure>
+                            <div class="section-specials--details">
+                                <p class="section-specials--ratings"><i class="fad fa-shopping-cart"></i> 8.5</p>
+                                <p class="section-specials--text">Stuffed-chicken Jalapeo Popper</p>
+                                <div class="section-specials--pricing">
+                                    <button class="section-specials--button">view dish</button>
+                                    <p class="section-specials--price">$15.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="section-specials--content">
+                            <figure>
+                                <img src="assets/img/special-2.jpg" alt="food-img" class="food-bg" />
+                                <div class="chef-details">
+                                    <img src="assets/img/chef-4.jpg" alt="chef-profile" class="chef-bg" />
+                                    <p class="chef-name">Chef Ander Smith <br> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                </div>
+                            </figure>
+                            <div class="section-specials--details">
+                                <p class="section-specials--ratings"><i class="fad fa-shopping-cart"></i> 9.0</p>
+                                <p class="section-specials--text">Italina Spring Coffee with cookies</p>
+                                <div class="section-specials--pricing">
+                                    <button class="section-specials--button">view dish</button>
+                                    <p class="section-specials--price">$10.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="section-specials--content">
+                            <figure>
+                                <img src="assets/img/special-3.jpg" alt="food-img" class="food-bg" />
+                                <div class="chef-details">
+                                    <img src="assets/img/chef-2.jpg" alt="chef-profile" class="chef-bg" />
+                                    <p class="chef-name">Chef Fred Min Hoo <br> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                </div>
+                            </figure>
+                            <div class="section-specials--details">
+                                <p class="section-specials--ratings"><i class="fad fa-shopping-cart"></i> 8.5</p>
+                                <p class="section-specials--text">Carrina slices & marronian cheese</p>
+                                <div class="section-specials--pricing">
+                                    <button class="section-specials--button">view dish</button>
+                                    <p class="section-specials--price">$17.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn">View Specials <i class="fad fa-angle-double-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Section app -->
+        <section class="section-app">
+            <div class="container">
+                <div class="row app">
+                    <div class="col-lg-6">
+                        <h2 class="section-app--header">Download our mobile app now!</h2>
+                        <p class="section-app--caption">ChefRunTown mobile helps you order food more easily</p>
+                        <p class="section-app--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                            neque dolor architecto assumenda sint, eaque tempora illum perferendis quibusdam
+                            necessitatibus voluptatibus fugit adipisci voluptates, perspiciatis, dolore aut mollitia.
+                            Illo, quae? quibusdam necessitatibus voluptatibus fugit adipisci voluptates, perspiciatis,
+                            dolore aut mollitia. Illo, quae?</p>
+                        <div class="row buttons">
+                            <div class="col-lg-6">
+                                <button class="section-app--links section-app--links-1"><i class="fab fa-apple"></i> App
+                                    store</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <button class="section-app--links section-app--links-2"><i class="fab fa-android"></i>
+                                    Playstore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://i.ya-webdesign.com/images/iphone-home-screen-png-8.png" alt="app-bg"
+                            class="section-app--img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="header__nav--logo">
+                        <h1>ChefRunTown.com</h1>
+                        <p class="footer--text footer--text-1">Anywhere, anytime. Enjoy your top services from your
+                            favourite chef site.</p>
+                        <h2 class="footer--header">Contact us</h2>
+                        <p class="footer--text"><i class="fa fa-envelope-open-text"></i> info.chefruntown@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h2 class="footer--header">Information</h2>
+                    <ul class="footer--links">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">More search</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h2 class="footer--header">Helpful links</h2>
+                    <ul class="footer--links">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Supports</a></li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h2 class="footer--header">Our menu</h2>
+                    <ul class="footer--links">
+                        <li><a href="#">Launch</a></li>
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Local & Foreign</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="footer--links footer--links-2">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Animate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml2');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: false
+            })
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 200 * i
+            }).add({
+                targets: '.ml2',
+                opacity: 1,
+                duration: 2000,
+                easing: "easeOutExpo",
+                delay: 4000
+            });
+    </script>
+
+    <script>
+        var textWrapper = document.querySelector('.ml6 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: false
+            })
+            .add({
+                targets: '.ml6 .letter',
+                translateY: ["1.1em", 0],
+                translateZ: 0,
+                duration: 600,
+                delay: (el, i) => 50 * i
+            }).add({
+                targets: '.ml6',
+                opacity: 1,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 5000
+            });
+    </script>
+    <!-- External script -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+.footer {
+    padding: 10rem 0;
+    padding-bottom: 16rem;
+    background-color: #fff;
+    position: relative;
+    text-align: left !important;
+
+    @include respond(tab-land) {
+        padding: 5rem 0;
+    }
+
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 25rem;
+        height: 25rem;
+        background-image: url('../img/cream.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: 0;
+        transform: scale(.9);
+        float: right;
+        right: 0;
+    }
+
+    & .header__nav--logo {
+        color: $color-black;
+        text-align: left !important;
+        top: 0;
+
+        @include respond(tab-land) {
+            left: 0;
+        }
+    }
+
+    &--links {
+        &-2 {
+
+            & li {
+                
+                & a {
+                    font-size: 1.6rem !important;
+                    border-bottom: 2px solid #000;
+                    padding-bottom: 0.5rem;
+                }
+
+
+                &:first-child {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        & li {
+            list-style-type: none;
+            text-transform: capitalize;
+            padding: 1rem 0;
+
+            & a {
+                color: #2d2d2d;
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &--header {
+        font-family: 'Poppins';
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    &--text {
+        text-align: left;
+        font-size: 1.3rem;
+        line-height: 2;
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-family: 'Poppins' !important;
+
+        & i {
+            color: $color-primary;
+            margin-right: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        &-1 {
+            padding-right: 2rem;
+        }
+    }
+}

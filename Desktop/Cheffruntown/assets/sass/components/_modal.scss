@@ -1,0 +1,236 @@
+.modal-box {
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 20;
+
+
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .6);
+        content: '';
+        z-index: 2;
+    }
+
+    &-bg {
+        position: relative;
+        height: 53.7rem;
+        border-bottom: 1px solid #fff;
+
+        &::before {
+            width: 95%;
+            height: 100vh;
+            content: '';
+            position: absolute;
+            background-image: linear-gradient(to bottom, rgba(#000, .3), rgba(#000, .3)), url('../img/bg.png');
+            background-size: 200%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            z-index: -1;
+        }
+
+        &-2 {
+
+            &::before {
+                background-image: linear-gradient(to bottom, rgba(#000, .3), rgba(#000, .3)), url('../img/bg2.jpg');
+            }
+        }
+    }
+
+    &-content {
+        padding: 3rem 4rem;
+        position: relative;
+    }
+
+    &-sign {
+        width: 90rem;
+        background-color: $color-white;
+        position: absolute;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        height: 55rem;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        & .close {
+            position: absolute;
+            float: right;
+            right: 4rem;
+        }
+
+        &--header {
+            font-size: 4rem;
+            color: $color-white;
+            text-transform: uppercase;
+            margin-top: 3rem;
+            padding-left: 3rem;
+            font-family: 'Dancing Script';
+        }
+
+        &--caption {
+            font-size: 1.5rem;
+            padding-left: 3rem;
+            color: $color-white;
+
+            &-2 {
+                position: absolute;
+                bottom: 0;
+                text-transform: capitalize;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    & .tab {
+
+        &-box {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+
+            &-2 {
+
+                & .active {
+                    background-color: #37ac54 !important;
+                    box-shadow: 0 .5rem 1.5rem #249c42 !important;
+                }
+            }
+
+            & .active {
+                background-color: #7207af;
+                color: $color-white;
+                box-shadow: 0 .5rem 1.5rem #59048a;
+            }
+        }
+
+        &-btn {
+            background-color: transparent;
+            border: none;
+            padding: 1.2rem 3rem;
+            font-size: 1.3rem;
+            border-radius: 0.3rem;
+            font-weight: 600;
+            transition-delay: .5s;
+            transition: all .2s;
+            font-family: 'Poppins';
+            color: #7207af;
+            outline: none;
+            cursor: pointer;
+
+            &-2 {
+                color: #459716;
+            }
+        }
+    }
+
+    & .form {
+        margin-top: 2rem;
+        position: absolute;
+        padding-left: 1rem;
+        width: 87%;
+
+        &-box {
+            margin-bottom: 2rem;
+        }
+
+        & label {
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-family: 'Poppins';
+            text-transform: capitalize;
+            color: #303030;
+        }
+
+        &-input {
+            font-size: 1.5rem;
+            width: 100%;
+            padding: 1.2rem 2rem;
+            outline: none;
+            font-family: 'Poppins';
+
+            &-2 {
+
+                &:focus {
+                    border: 2px solid #37ac54 !important;
+                }
+            }
+
+            &:focus {
+                border: 2px solid #7207af;
+            }
+
+        }
+
+        &-btn {
+            color: #7207af;
+            font-size: 1.3rem;
+            font-family: 'Poppins';
+            padding: 1.1rem 4rem;
+            border-radius: 2.5rem;
+            font-weight: 500;
+            background-color: #d2d2d2;
+            border: none;
+            font-weight: 500;
+            text-align: center;
+            transform: translateX(-50%);
+            left: 50%;
+            position: relative;
+            outline: none;
+            cursor: pointer;
+            overflow: hidden;
+            text-transform: capitalize;
+            transition: all .2s;
+
+            &-lo {
+                color: #37ac54;
+
+                &::before {
+                    background-image: linear-gradient(to left, #459716, #37ac54) !important;
+                }
+            }
+
+            &::before {
+                width: 100%;
+                height: 0;
+                background-image: linear-gradient(to left, #7207af, #7270af);
+                position: absolute;
+                content: 'Sign up';
+                color: $color-white;
+                padding: 0;
+                top: 0;
+                left: 0;
+                transform: translateY(100%);
+                transition: all .3s;
+                overflow: hidden;
+            }
+
+            &:hover::before {
+                height: 100%;
+                transform: translateY(0);
+                padding-top: 1.2rem;
+            }
+
+            &:active {
+                transform: translateX(-50%) scale(.95);
+            }
+
+            &-2 {
+                margin-top: 19.2rem;
+
+                &::before {
+                    content: 'Login';
+                }
+            }
+        }
+    }
+}
+
+.tabcontent {
+    display: none;
+}
