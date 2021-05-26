@@ -1,116 +1,110 @@
 .section-chef {
-    position: relative;
-    padding: 0rem 0 10rem 0;
+  position: relative;
+  padding: 0rem 0 10rem 0;
+
+  @include respond(tab-land) {
+    padding: 0;
+    padding-bottom: 5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/chick-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25rem;
+    height: 25rem;
+    transform: scale(1.5);
+    float: right;
+    right: 0;
+    z-index: 2;
+    bottom: -10rem;
 
     @include respond(tab-land) {
-       padding: 0;
-       padding-bottom: 5rem;
-       width: 90%;
-       margin: 0 auto;
+      display: none;
     }
-    
+  }
 
-    
+  & .row {
+    position: relative;
+    overflow-x: hidden !important;
+
     &::before {
-        position: absolute;
-        content: '';
-        background-image: url('../img/chick-1.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 25rem;
-        height: 25rem;
-        transform: scale(1.5);
-        float: right;
-        right: 0;
-        z-index: 2;
-        bottom: -10rem;
+      position: absolute;
+      content: '';
+      background-image: url('../img/gradient.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 70%;
+      height: 100%;
+      left: -18rem;
 
-        @include respond(tab-land) {
-            display: none;
-        }
+      @include respond(tab-land) {
+        display: none;
+      }
     }
 
+    & .col-lg-5 {
+      padding-top: 10rem;
+      margin-left: -7rem;
 
-    & .row {
-        position: relative;
-        overflow-x: hidden !important;
-        
-        &::before {
-            position: absolute;
-            content: '';
-            background-image: url('../img/gradient.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 70%;
-            height: 100%;
-            left: -18rem;
-
-            @include respond(tab-land) {
-               display: none;
-            }
-        }
-
-        & .col-lg-5 {
-            padding-top: 10rem;
-            margin-left: -7rem;
-
-            @include respond(tab-land) {
-               margin-left: 0;
-            }
-        }
+      @include respond(tab-land) {
+        margin-left: 0;
+      }
     }
+  }
 
-    &--img {
-        height: 80rem;
-        border-radius: 1rem;
-        bottom: 0;
+  &--img {
+    height: 80rem;
+    border-radius: 1rem;
+    bottom: 0;
 
-        @include respond(tab-land) {
-            display: none;
-         }
+    @include respond(tab-land) {
+      display: none;
     }
+  }
 
-    &--img-2 {
-        width: 55rem;
-        position: absolute;
-        float: right;
-        right: -5rem;
-        border-radius: 1rem;
-        bottom: 0;
+  &--img-2 {
+    width: 55rem;
+    position: absolute;
+    float: right;
+    right: -5rem;
+    border-radius: 1rem;
+    bottom: 0;
+  }
 
-       
+  &__header {
+    color: $color-black;
+    font-size: 6.5rem;
+    font-weight: 800;
+    font-family: 'Dancing Script';
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+
+    & span {
+      color: $color-primary;
     }
+  }
 
-    &__header {
-        color: $color-black;
-        font-size: 6.5rem;
-        font-weight: 800;
-        font-family: 'Dancing Script';
-        text-transform: capitalize;
-        margin-bottom: 3rem;
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.5;
+    text-align: left;
+  }
 
-        & span {
-            color: $color-primary;
-        }
+  & .btn {
+    margin-top: 2rem;
+    font-weight: 500;
+
+    @include respond(tab-port) {
+      transform: translateX(-50%);
+      left: 50%;
+      position: relative;
     }
-
-    &__text {
-        font-size: 1.6rem;
-        line-height: 2.5;
-        text-align: left;
-    }
-
-    & .btn {
-        margin-top: 2rem;
-        font-weight: 500;
-
-
-        @include respond(tab-port) {
-            transform: translateX(-50%);
-            left: 50%;
-            position: relative;
-        }
-    }
+  }
 }
 
 // &-2 {
@@ -126,7 +120,7 @@
 // &::before {
 //     content: '';
 //     position: absolute;
-//     width: 60.8%; 
+//     width: 60.8%;
 //     height: 100%;
 //     background-image: linear-gradient(to left bottom , rgba(0, 0, 0, 0.534), rgba(255, 255, 255, 0.493));
 //     clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
